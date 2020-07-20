@@ -16,7 +16,11 @@ pdfMake.fonts = {
 export const to_pdf = async (options = {}) => {
   const docDefinition = options.data || {};
   const name = options.name || "demo.pdf";
-  await pdfMake.createPdf(docDefinition).download(name);
+  return new Promise((resolve, reject) => {
+    pdfMake.createPdf(docDefinition).download(name, () => {
+      resolve();
+    });
+  });
 };
 
 export default { to_pdf };
