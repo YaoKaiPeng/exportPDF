@@ -1,14 +1,18 @@
 {
-  "name": "c-framework",
+  "name": "exportPDF",
   "version": "1.0.0",
-  "description": "react组件开发框架",
+  "description": "导出PDF",
   "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.config.js",
-    "build": "webpack --config config/webpack.prod.config.js", 
+    "build": "webpack --config config/webpack.prod.config.js",
     "pub": "npm run build && npm publish"
   },
   "keywords": [],
+  "files": [
+    "src",
+    "lib/*.js"
+  ],
   "author": "kai",
   "license": "ISC",
   "devDependencies": {
@@ -17,14 +21,12 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.1",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.4.2",
-    "mini-css-extract-plugin": "^0.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "style-loader": "^1.1.3",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "pdfmake": "^0.1.66"
   }
 }

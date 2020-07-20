@@ -1,39 +1,28 @@
-# 组件开发框架
+# exportPDF
 
-webpack配置等已准备好, 可以直接开发组件, 开发后可以进行build, 发布至npm
+前端导出PDF文件,支持简繁字体
 
-------------
-
-### 目录解释
+#### 使用方法
 ```
-├── config # webpack配置
-	├── webpack.base.js # 公共配置
-	├── webpack.dev.config.js # 开发环境
-	└── webpack.prod.config.js # 打包发布环境
-├── example # 开发时预览效果
-	├── app.js
-	└── index.html
-├── lib # 打包后生成到文件目录
-├── src # 组件业务代码, 在这编写你的组件
-	├── index.css # 组件样式
-	└── index.js # 组件代码
-├── .babelrc
-├── .npmignore
-├── README.md
-└── package.json
+import {to_pdf} from 'exportPDF';
+
+var data = {
+  content: [
+    { text: 'First 天氣不錯', style: 'header'},
+    'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines',
+  ],
+  defaultStyle: {
+    font: 'source',
+  },
+  styles: {
+    header: {
+      bold: false,
+    },
+  },
+}
+
+to_pdf({data})
 ```
 
-------------
-
-#### 开发
-```shell
-npm i
-npm start
-```
-#### 打包发布
-> 发布npm包请参考官方文档 https://docs.npmjs.com/cli/publish
-
-```shell
-npm run build
-npm publish
-```
+#### 参考资料
+[PDFMAKE](https://pdfmake.github.io/docs/)
