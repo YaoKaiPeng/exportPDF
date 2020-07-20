@@ -4,7 +4,7 @@ const baseConfig = require("./webpack.base.js");
 
 const prodConfig = {
   mode: "production",
-  entry: path.join(__dirname, "../src/index.js"),
+  entry: ["@babel/polyfill", path.join(__dirname, "../src/index.js")],
   output: {
     path: path.join(__dirname, "../lib/"),
     filename: "index.js",
