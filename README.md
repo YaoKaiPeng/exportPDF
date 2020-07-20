@@ -4,7 +4,7 @@
 
 #### 使用方法
 ```
-import {to_pdf} from 'exportPDF';
+import {to_pdf} from 'export-pdf';
 
 var data = {
   content: [

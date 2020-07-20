@@ -1,5 +1,5 @@
 {
-  "name": "exportPDF",
+  "name": "export-pdf",
   "version": "1.0.0",
   "description": "导出PDF",
   "main": "lib/index.js",
