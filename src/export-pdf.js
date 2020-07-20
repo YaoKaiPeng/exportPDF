@@ -3,13 +3,13 @@ import pdfMake from "pdfmake";
 pdfMake.fonts = {
   source: {
     normal:
-      "https://unpkg.com/exportPDF@1.0.1/src/font/SourceHanSansCN-Regular.ttf",
+      "https://unpkg.com/exportPDF@1.1.0/src/font/SourceHanSansCN-Regular.ttf",
     bold:
-      "https://unpkg.com/exportPDF@1.0.1/src/font/SourceHanSansCN-Medium.ttf",
+      "https://unpkg.com/exportPDF@1.1.0/src/font/SourceHanSansCN-Medium.ttf",
     italics:
-      "https://unpkg.com/exportPDF@1.0.1/src/font/SourceHanSansCN-Regular.ttf",
+      "https://unpkg.com/exportPDF@1.1.0/src/font/SourceHanSansCN-Regular.ttf",
     bolditalics:
-      "https://unpkg.com/exportPDF@1.0.1/src/font/SourceHanSansCN-Medium.ttf"
+      "https://unpkg.com/exportPDF@1.1.0/src/font/SourceHanSansCN-Medium.ttf"
   }
 };
 
